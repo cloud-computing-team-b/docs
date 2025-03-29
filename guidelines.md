@@ -7,8 +7,8 @@
 
 ### 1. 프로젝트 구조
 - API 서버
-- 유저 에뮬레이터 서버
-- 스트레스 인스턴스 매니저
+- 유저 에뮬레이터
+- 스트레서 매니저
 - 데이터베이스
 
 하단 다이어그램을 참조해주시길 바랍니다.
@@ -17,7 +17,7 @@
 - 프론트엔드: React + (CSS 프레임워크?)
 - API 서버: Spring Boot
 - 유저 에뮬레이터 서버: Javascript (Node.js)
-- 스트레스 인스턴스 매니저 및 스트레스 인스턴스: Golang
+- 스트레서 매니저 및 스트레서: Golang
 - 데이터베이스: MySQL
 - 정적 파일 서빙 및 리버스프록시: Nginx (혹은 Caddy)
 
@@ -36,7 +36,7 @@
 
 해당 섹션에서는 개발 관리 도구에 관해서만 기술합니다.
 
-- Git: Github Organization 아래의 web-client, api, user-emulator, stress-instance-manager, stress-instance, deploy 레포지토리에서 관리합니다. Git 관련 내용에 관해서는 하단에 자세히 기술할 예정입니다.
+- Git: Github Organization 아래의 web-client, api, user-emulator, stresser-manager, stresser, deploy 레포지토리에서 관리합니다. Git 관련 내용에 관해서는 하단에 자세히 기술할 예정입니다.
 - CI/CD: Github Actions
 - Deployment: Docker + Terraform
 
@@ -86,20 +86,20 @@
 ##### 4.4.2. API 엔드포인트 테스트
 API Specification이 완성되는데로 API 서버 테스트용 프로그램을 작성할 예정입니다.
 
-해당 프로그램은 API 서버, 유저 에뮬레이터, 스트레스 인스턴스 매니저 각각에 대해서 작성할 예정이며 하단과 같은 방법으로 사용해주시면 됩니다.
+해당 프로그램은 API 서버, 유저 에뮬레이터, 스트레서 매니저 각각에 대해서 작성할 예정이며 하단과 같은 방법으로 사용해주시면 됩니다.
 
 Linux/MacOS:
 ```bash
 ./test api-server http://localhost:8080
 ./test user-emulator http://localhost:3000
-./test stress-instance-manager http://localhost:4000
+./test stresser-manager http://localhost:4000
 ```
 
 Windows:
 ```bash
 test.exe api-server http://localhost:8080
 test.exe user-emulator http://localhost:3000
-test.exe stress-instance-manager http://localhost:4000
+test.exe stresser-manager http://localhost:4000
 ```
 
 #### 4.5. 환경 변수
