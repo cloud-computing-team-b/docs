@@ -81,7 +81,7 @@ AWS 리소스:
 예시:
 - feat: user 라우터 핸들러 추가
 - fix: 버그 수정
-- refactor: function1 함수 성능 계선
+- refactor: function1 함수 성능 개선
 
 #### 4.3. 코드 가이드라인
 코드 가이드라인은 각 언어에 맞게 자유롭게 적용해주시면 될 것 같습니다. 
