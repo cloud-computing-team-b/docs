@@ -18,6 +18,8 @@ AWS 리소스:
 
 하단 다이어그램을 참조해주시길 바랍니다.
 
+![Architecture Diagram](./img/diagram.png)
+
 ### 2. 기술 스택
 - 프론트엔드: React + (CSS 프레임워크?)
 - API 서버: Spring Boot
