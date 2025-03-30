@@ -36,6 +36,8 @@ AWS 리소스:
 - 단일 바이너리 형식으로 쉬운 배포 가능
 - Nginx를 사용해야할 만큼의 성능 필요성 불확실
 
+프론트엔드의 경우 [Metronic Admin Template](https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469)을 사용하는것을 고려중입니다.
+
 ### 3. 개발 환경 및 도구
 각각의 백엔드 서버에 관해서는 개인이 사용하기 편한 개발환경을 사용해주시면 될 것 같습니다.
 
@@ -79,7 +81,7 @@ AWS 리소스:
 예시:
 - feat: user 라우터 핸들러 추가
 - fix: 버그 수정
-- refactor: function1 함수 성능 계선
+- refactor: function1 함수 성능 개선
 
 #### 4.3. 코드 가이드라인
 코드 가이드라인은 각 언어에 맞게 자유롭게 적용해주시면 될 것 같습니다. 
@@ -121,6 +123,8 @@ test.exe stresser-manager http://localhost:4000
 도커로 모든 백엔드의 서버들을 패키징할 예정이기에 꼭 지켜주셔야 합니다.
 
 프로젝트에서 사용하는 환경 변수들은 .env 파일에 예시 값과 함께 정의해주시면 됩니다.
+
+**.env 파일은 프로젝트의 루트 폴더에 위치시켜주세요!!**
 
 .env:
 ```
