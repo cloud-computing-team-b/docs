@@ -1,0 +1,1 @@
+- [An updated performance comparison of virtual machines and Linux containers](https://ieeexplore.ieee.org/document/7095802) 해당 프로젝트에서는 단일 서비스를 배포하기 위해서라도 도커를 사용합니다. 이로 인해 오버헤드를 가지지 않냐는 의문이 생길 수 있지만 2015년 성능 비교에서도 네트워킹을 제외한 모든 퍼포먼스에서 차이가 거의 없다는 결과를 보여줍니다. 네트워킹 또한 host 네트워크 모드를 사용하여 동일한 퍼포먼스를 가질 수 있습니다. 즉, 배포의 편의성을 위해 도커를 사용하더라도 성능에는 어떠한 저하도 발생하지 않습니다.
