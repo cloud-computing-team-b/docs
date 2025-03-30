@@ -11,6 +11,11 @@
 - 스트레서 매니저
 - 데이터베이스
 
+AWS 리소스:
+- EC2
+- Aurora
+- Fargate
+
 하단 다이어그램을 참조해주시길 바랍니다.
 
 ### 2. 기술 스택
@@ -38,7 +43,7 @@
 
 - Git: Github Organization 아래의 web-client, api, user-emulator, stresser-manager, stresser, deploy 레포지토리에서 관리합니다. Git 관련 내용에 관해서는 하단에 자세히 기술할 예정입니다.
 - CI/CD: Github Actions
-- Deployment: Docker + Terraform
+- Deployment: Docker + GHCR + Terraform
 
 ### 4. 프로젝트 관리
 위에서 언급한 것처럼 Git을 통해 프로젝트를 관리할 계획입니다. 
